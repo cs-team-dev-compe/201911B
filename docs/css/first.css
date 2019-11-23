@@ -1,0 +1,68 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .all-background {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg,hsla(var(--animation-color-2-hsl)) 50%,hsla(var(--animation-color-3-hsl)) 50%);
+    top:0;
+    bottom:0;
+    left:-50%;
+    right:-50%;
+    opacity:0.5;
+    position:fixed;
+  }
+  
+  .back-a {
+    animation-direction:alternate-reverse;
+    animation-duration:3s;
+  }
+  
+  .back-b {
+    animation-duration:4s;
+  }
+  
+  .content {
+    background-color:var(--animation-color-1-hsl);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  .title-text{
+    animation-name:fade-in;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-delay:1s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    font-family:sans-serif;
+    color:#333;
+    opacity: 0;
+  }
+  
+@keyframes fade-in{
+    0% {opacity: 0; }
+  100% {opacity: 0.7;}
+}
+
+  @keyframes slide {
+    0% {
+      transform:translateX(25%);
+      transform:translateY(-25%);
+
+    }
+    100% {
+    transform:translateX(-25%);
+      transform:translateY(25%);
+    }
+  }
