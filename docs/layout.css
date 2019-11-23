@@ -14,3 +14,7 @@
   --main-color: hsla(84, 53%, 34%, 1);
   --main-dark-color: hsla(84, 53%, 19%, 1);
 }
+
+* {
+  font-family: "Handlee", cursive;
+}
