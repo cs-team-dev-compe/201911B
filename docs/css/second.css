@@ -1,0 +1,69 @@
+/* .square {
+  width: 500px;
+  height: 500px;
+  background-color: var(--animation-color-1);
+  position: absolute;
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+}
+
+.square {
+  animation: rotateSquare 1s linear 0.5s forwards;
+}
+
+@keyframes rotateSquare {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}  */
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: var(--animation-color-1);
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.square {
+  animation: firstSquare 3s linear 0.5s forwards;
+}
+
+@keyframes firstSquare {
+  from {
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    width: 1500px;
+    height: 1000px;
+  }
+}
+
+.square-2 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--animation-color-2);
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+
+.square-2 {
+  animation: firstSquare 3s linear 0.5s forwards;
+}
+
+@keyframes secondSquare {
+  from {
+    bottom: 10px;
+    right: 10px;
+  }
+  to {
+    bottom: 1000px;
+    right: 1500px;
+  }
+}
